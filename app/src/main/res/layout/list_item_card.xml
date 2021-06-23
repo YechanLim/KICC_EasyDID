@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_view_call_num_frame"
+    android:background="@drawable/btn_round_line_black_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/text_view_call_num"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="call num"
+        android:textSize="50sp" />
+
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_key_connect_device_entries">
+        <item>윈도우 포스</item>
+        <item>안드로이드 포스</item>
+    </string-array>
+    <string-array name="pref_key_connect_device_entries_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="pref_key_easydid_theme_entries">
+        <item>밝은 테마</item>
+        <item>어두운 테마</item>
+    </string-array>
+    <string-array name="pref_key_easydid_theme_entries_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>

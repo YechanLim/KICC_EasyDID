@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="500dp"
+    android:layout_height="250dp"
+    tools:context="com.kicc.easypos.tablet.filedownload.DownloadActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tvReceiveTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="진행률"
+                android:textSize="17sp" />
+
+            <ProgressBar
+                android:id="@+id/pbReceiveStatus"
+                style="@style/CustomProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvReceiveStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10%"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:padding="15dp">
+            <Button
+                android:id="@+id/btnConfig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="설정"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="148dp"
+                tools:layout_editor_absoluteY="231dp"
+                android:background="@drawable/custom_numpad_background"/>
+
+            <Button
+                android:id="@+id/btnReDownload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다운로드"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="148dp"
+                tools:layout_editor_absoluteY="231dp"
+                android:background="@drawable/custom_numpad_background"/>
+
+            <Button
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:text="닫기"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="148dp"
+                tools:layout_editor_absoluteY="231dp"
+                android:background="@drawable/custom_numpad_background"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMsg"
+                android:textSize="17sp"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="textCapWords"
+        android:key="pref_key_head_office_no"
+        android:maxLines="1"
+        android:maxLength="3"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_head_office_no"
+        android:summary="@string/pref_summary_head_office_no"
+        android:hint="@string/pref_summary_head_office_no"/>
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="numberSigned"
+        android:key="pref_key_shop_no"
+        android:maxLines="1"
+        android:maxLength="6"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_shop_no"
+        android:summary="@string/pref_summary_shop_no"
+        android:hint="@string/pref_summary_shop_no"/>
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="textCapWords"
+        android:key="pref_key_user_id"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_user_id"
+        android:summary="@string/pref_summary_user_id"
+        android:hint="@string/pref_summary_user_id"/>
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="textPassword"
+        android:key="pref_key_user_pw"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_user_pw"
+        android:summary="@string/pref_summary_user_pw"
+        android:hint="@string/pref_summary_user_pw"/>
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="textCapWords"
+        android:key="pref_key_folder_nm"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_folder_nm"
+        android:summary="@string/pref_summary_folder_nm"
+        android:hint="@string/pref_summary_folder_nm"/>
+
+</PreferenceScreen>

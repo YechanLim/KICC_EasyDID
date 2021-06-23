@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="apk" path="/easypos/apk" />
+    <external-path name="download" path="/easypos/download" />
+    <external-path name="config" path="/easypos/config" />
+    <external-path name="dat" path="/easypos/dat" />
+    <external-path name="img" path="/easypos/img" />
+    <external-path name="default_zip" path="/easypos/default_zip" />
+</paths>

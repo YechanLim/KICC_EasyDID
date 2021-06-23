@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:icon="@android:drawable/ic_menu_edit">
+    <androidx.preference.PreferenceCategory
+        android:key="pref_key_easydid_device"
+        android:layout="@layout/layout_preference_category"
+        android:title="장치">
+
+        <androidx.preference.EditTextPreference
+            android:dialogMessage="서버 포트 설정"
+            android:digits="1234567890"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:inputType="text|number"
+            android:key="pref_key_easydid_network_server_port"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="서버 포트 설정"
+            app:icon="?attr/actionModeShareDrawable" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="pref_key_easydid_ui"
+        android:layout="@layout/layout_preference_category"
+        android:title="화면">
+
+        <androidx.preference.ListPreference
+            android:defaultValue="0"
+            android:entries="@array/pref_key_easydid_theme_entries"
+            android:entryValues="@array/pref_key_easydid_theme_entries_values"
+            android:key="pref_key_easydid_theme"
+            android:title="테마"
+            android:summary="EasyDID 테마를 선택합니다"
+            app:icon="@android:drawable/ic_menu_crop"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_key_easydid_use_top_bar_yn"
+            android:summary="DID 화면의 상단바 및 로고 표시 여부"
+            android:title="DID 화면 상단바 표시 여부"
+            app:icon="@android:drawable/ic_menu_more" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="pref_key_easydid_card"
+        android:layout="@layout/layout_preference_category"
+        android:title="번호 카드">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_key_easydid_use_basic_card_yn"
+            android:summary="기본 카드 UI 사용 여부를 설정합니다"
+            android:title="기본 카드 사용 여부"
+            app:icon="@android:drawable/ic_menu_info_details"/>
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+            android:defaultValue="#ffffff"
+            android:key="pref_key_easydid_call_num_background"
+            android:summary="배경색 설정"
+            android:title="번호 카드 배경색"
+            app:colorChoices="@array/color_choices"
+            app:colorShape="circle"
+            app:icon="@android:drawable/ic_menu_edit"
+            app:numColumns="5"
+            app:showDialog="true"
+            app:viewSize="normal" />
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+            android:defaultValue="#000000"
+            android:key="pref_key_easydid_call_num_text_color"
+            android:summary="글자색 설정"
+            android:title="번호 카드 글자색"
+            app:colorChoices="@array/color_choices"
+            app:colorShape="circle"
+            app:icon="@android:drawable/ic_menu_sort_alphabetically"
+            app:numColumns="5"
+            app:showDialog="true"
+            app:viewSize="normal" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogMessage="분 단위로 입력하세요"
+            android:digits="1234567890"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:inputType="text|number"
+            android:key="pref_key_easydid_call_num_rmv_time"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="분 단위"
+            android:title="번호 카드 삭제 시간"
+            app:icon="@android:drawable/ic_menu_recent_history" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogMessage="초 단위로 입력하세요"
+            android:digits="1234567890"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:inputType="text|number"
+            android:key="pref_key_easydid_call_num_flicker_time"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="초 단위"
+            android:title="번호 카드 플리커 시간"
+            app:icon="@android:drawable/ic_menu_view" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogMessage="최대 표시 오더 갯수"
+            android:summary="1~15"
+            android:digits="1234567890"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:inputType="text|number"
+            android:key="pref_key_easydid_rcv_order_num_limit"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="최대 표시 오더 갯수"
+            app:icon="@android:drawable/ic_menu_today" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="pref_key_easydid_ad"
+        android:layout="@layout/layout_preference_category"
+        android:title="광고 패널">
+
+        <androidx.preference.Preference
+            android:title="비디오 설정 및 다운로드"
+            android:summary="광고 영상을 다운로드 할 수 있습니다"
+            android:key="pref_key_easydid_ad_video"/>
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

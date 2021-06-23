@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">파일 다운로드</string>
+    <string name="title_activity_download">파일 다운로드</string>
+    <string name="title_activity_setting">설정</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">매장정보 입력</string>
+
+    <string name="pref_title_head_office_no">본부코드</string>
+    <string name="pref_title_shop_no">매장코드</string>
+    <string name="pref_title_user_id">아이디</string>
+    <string name="pref_title_user_pw">패스워드</string>
+    <string name="pref_title_folder_nm">폴더명</string>
+
+    <string name="pref_summary_head_office_no">본부코드 3자리를 입력하세요</string>
+    <string name="pref_summary_shop_no">매장코드 6자리를 입력하세요</string>
+    <string name="pref_summary_user_id">로그인 아이디를 입력하세요</string>
+    <string name="pref_summary_user_pw">로그인 패스워드를 입력하세요</string>
+    <string name="pref_summary_folder_nm">ASP에 업로드한 Default.zip 파일 내에서 이 장비에서 사용할 폴더명을 입력하세요.</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+</resources>
